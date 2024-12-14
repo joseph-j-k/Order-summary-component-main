@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 375px;
+  height: 600px;
+  border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container img {
+  width: inherit;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 20px;
+}
+.container h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.container p {
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: hsl(224, 23%, 55%);
+}
+
+.annualcontainer {
+  width: 307px;
+  height: 67px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.annualcontainer img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+.annualplan {
+  width: 350px;
+  height: 50px;
+}
+.annualplan h3 {
+  font-weight: 600;
+  color: hsl(224, 23%, 55%);
+}
+.annualcontainer a {
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+  margin-right: 20px;
+}
+.annualcontainer a:hover {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+
+button {
+  width: 300px;
+  color: #fff;
+  background-color: hsl(245, 75%, 52%);
+  margin-bottom: 20px;
+  height: 50px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: 0.2s ease;
+}
+button:hover {
+  background-color: hsl(245, 98%, 69%);
+}
+
+#canelorder {
+  font-weight: 650;
+  color: #000;
+  text-decoration: none;
+  opacity: 0.6;
+}
+#canelorder:hover {
+  opacity: 1;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 330px;
+    height: 568px;
+    /* background-color: red;     */
+  }
+  .container p {
+    width: 270px;
+    font-size: 16px;
+  }
+  .annualcontainer {
+    width: 260px;
+    height: 50px;
+  }
+  .annualplan {
+    width: 260px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .annualplan h2 {
+    font-size: 13px;
+    font-weight: 800;
+  }
+  .annualplan h3 {
+    font-size: 14px;
+  }
+  .annualcontainer a {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  button {
+    width: 270px;
+  }
+}
